@@ -19,12 +19,12 @@ jobs:
           node-version: '12.x'
       - name: npm install
         run: npm install
-        working-directory: redux-anecdotes-frontend
-      - name: lint
-        run: npm run eslint
+        working-directory: redux-anecdotes
+      # - name: lint
+      #   run: npm run eslint
       - name: build
         run: npm run build
-        working-directory: redux-anecdotes-frontend
+        working-directory: redux-anecdotes
       - name: copy frontend build to the right place so it can be served by nodejs
         run: cp -r build ../build
       # - name: test
