@@ -22,7 +22,6 @@ jobs:
         working-directory: redux-anecdotes
       - name: lint
         run: npm run eslint
-        working-directory: .
       - name: build
         run: npm run build
         working-directory: redux-anecdotes
