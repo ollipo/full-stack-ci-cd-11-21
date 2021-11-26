@@ -24,7 +24,8 @@ jobs:
         run: |
           echo "runner.temp = ${{ runner.temp }}"
           echo "Current working directory -- $PWD"
-          npm run eslint
+          npm run ./eslint
+        working-directory: redux-anecdotes
       - name: build
         run: npm run build
         working-directory: redux-anecdotes
