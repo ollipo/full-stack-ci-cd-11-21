@@ -6,16 +6,12 @@
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "eslint": "eslint './**/*.{js,jsx}'"
+    "eslint": "eslint \"./**/*.{js,jsx}\""
   },
   "author": "Olli Porvari",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
-  },
-  "devDependencies": {
-    "@typescript-eslint/parser": "^5.4.0",
     "eslint": "^8.3.0",
-    "eslint-plugin-react": "^7.27.1"
+    "express": "^4.17.1"
   }
 }
