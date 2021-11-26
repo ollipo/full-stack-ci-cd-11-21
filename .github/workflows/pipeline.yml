@@ -21,7 +21,8 @@ jobs:
         run: npm install
         working-directory: redux-anecdotes
       - name: lint
-        run: cd .. | npm run eslint
+        run: npm run eslint
+        working-directory: full-stack-ci-cd-11-21
       - name: build
         run: npm run build
         working-directory: redux-anecdotes
