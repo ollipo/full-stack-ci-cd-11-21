@@ -25,14 +25,12 @@ jobs:
         working-directory: redux-anecdotes
       - name: copy frontend build to the right place so it can be served by nodejs
         run: cp -r build ../build
-      # - name: test
-      #   run: npm run test
-      # - name: e2e tests
-      #   uses: cypress-io/github-action@v2
-      #   with:
-      #     command: npm run test:e2e
-      #     start: npm run start-prod
-      #     wait-on: http://localhost:5000
+      - name: e2e tests
+        uses: cypress-io/github-action@v2
+        with:
+          command: npm run test:e2e
+          start: npm start
+          wait-on: http://localhost:3000
       # - uses: akhileshns/heroku-deploy@v3.12.12 
       #   with:
       #     heroku_api_key: ${{secrets.HEROKU_API_KEY}}
