@@ -54,6 +54,14 @@ app.get('/anecdotes/:id', (req, res) => {
     res.json(anecdote)
 })
 
+app.get('/health', (req, res) => {
+    res.send('ok')
+  })
+  
+app.get('/version', (req, res) => {
+res.send('1')
+})
+
 app.put('/anecdotes/:id', (req, res) => {
     const id = req.params.id
     const anecdote = anecdotes.find(anecdote => anecdote.id === id)
