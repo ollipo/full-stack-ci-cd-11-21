@@ -31,11 +31,11 @@ jobs:
           command: npm run test:e2e
           start: npm start
           wait-on: http://localhost:3000
-      # - uses: akhileshns/heroku-deploy@v3.12.12 
-      #   with:
-      #     heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-      #     heroku_app_name: "full-stack-open-poledex"
-      #     heroku_email: "olli.j.porvari@utu.fi"
+      - uses: akhileshns/heroku-deploy@v3.12.12 
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "full-stack-ci-cd-11-21"
+          heroku_email: "olli.j.porvari@utu.fi"
       #     healthcheck: "https://full-stack-open-poledex.herokuapp.com/health"
       #     checkstring: "ok"
       #     rollbackonhealthcheckfailed: true
