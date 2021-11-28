@@ -59,7 +59,7 @@ app.get('/health', (req, res) => {
   })
   
 app.get('/version', (req, res) => {
-res.send('1')
+res.send('2')
 })
 
 app.put('/anecdotes/:id', (req, res) => {
