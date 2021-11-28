@@ -36,8 +36,6 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "full-stack-ci-cd-11-21"
           heroku_email: "olli.j.porvari@utu.fi"
-          healthcheck: "https://full-stack-ci-cd-11-21.herokuapp.com/health"
-          checkstring: "ok"
           rollbackonhealthcheckfailed: true
       - uses: actions/checkout@v2
       - name: Bump version and push tag
